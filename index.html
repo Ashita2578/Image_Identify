@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Face Recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script href="main.js"></script>
+</head>
+<body>
+    <center>
+        <h1>Face Recognitiion App</h1>
+        <p>This project can recognize the following items:</p><br><br>
+        <b>
+            Sister<hr>
+            Mother<hr>
+            Brother<hr>
+        </b>
+    
+<label>Webcam :</label>
+<div id="camera"></div><br>
+<div id ="result"></div><br><br><br>
+<button id="snap_but" onclick="snapshot()">Click Image</button><br><br>
+<button id="res_but" onclick="identify()">Recognize Image</button><br>
+
+<p>NAME OF OBJECT:<span id="object_name"></span></p>
+<p>ACCURACY:<span id="accurate_percentage"></span></p>
+</center>
+</body>
+</html>
